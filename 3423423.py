@@ -236,7 +236,8 @@ def main():
         if "train" not in raw_datasets:
             raise ValueError("--do_train requires a train dataset")
         print(888888888888888888888888888888,raw_datasets)
-        train_dataset = raw_datasets["train"][:numto_train_test]
+        train_dataset = raw_datasets["train"]
+        raw_train_dataset=train_dataset
         print(99999999999999999999, train_dataset)
         if data_args.max_train_samples is not None:
             max_train_samples = min(len(train_dataset), data_args.max_train_samples)
