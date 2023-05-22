@@ -1,0 +1,4 @@
+session_id,user_id,waiter_send,is_transfer,is_repeat,content
+00029c51f92e8f34250d6af329c9a8df,USERID_10003667,0,0,0,什么时候能发货啊
+00029c51f92e8f34250d6af329c9a8df,USERID_10003667,0,0,0,什么时候能发货啊
+00029c51f92e8f34250d6af329c9a8df,USERID_10003667,0,0,0,得等多久啊
