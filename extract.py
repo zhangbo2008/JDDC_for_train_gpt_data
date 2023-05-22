@@ -41,9 +41,13 @@ for i in range(0,len(save2),2 ):
     tmp['prompt']=save2[i][2]
     tmp['response']=save2[i+1][2]
     ttt=[]
-    for j in range(session_first_id,i):
-        ttt.append(save2[j][2])
-    tmp['history']=ttt
+    a=[]
+    b=[]
+    for j in range(session_first_id,i,2):
+        a.append(save2[j][2])
+    for j in range(session_first_id+1,i,2):
+        b.append(save2[j][2])
+    tmp['history']=list(zip(a,b))
     save3.append(tmp)
 print(1)
     
